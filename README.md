@@ -1,72 +1,105 @@
-# Proyecto: Gestión de Encuestas con Tkinter y MySQL
+Proyecto: Gestión de Encuestas con Tkinter y MySQL
+==================================================
 
 Este proyecto combina una interfaz gráfica construida con **Tkinter** y el manejo de datos mediante una base de datos **MySQL**, proporcionando un sistema para analizar datos relacionados con el consumo de alcohol y sus efectos en la salud.
 
+Autor
+-----
 
-## Autor
+-   [@DanielMillan](https://github.com/DanielMillanRuiz)
 
-- [@DanielMillan](https://github.com/DanielMillanRuiz)
+* * * * *
 
-## Requisitos previos
+Requisitos previos
+------------------
 
 Antes de comenzar, asegúrate de contar con lo siguiente instalado en tu sistema:
-1. **Python 3.9 o superior**: Descarga desde [python.org](https://www.python.org/).
-2. **MySQL Server**: Descarga desde [MySQL Community Downloads](https://dev.mysql.com/downloads/).
-3. Las siguientes librerías de Python, que se pueden instalar con `pip`:
-   - `pymysql`
-   - `pandas`
-   - `openpyxl`
-   - `matplotlib`
 
-## Instalación y configuración
-Antes de nada la carpeta con el proyecto debe estar en la ruta designada por defecto de pycharm la cual suele estar dentro del a carpeta de **usuarios\nombredeusuario\PycharmProjects.**
+1.  **Python 3.9 o superior**\
+    Descárgalo desde [python.org](https://www.python.org/).
 
-Dentro de esta se debe pegar la carpeta para luego dentro de la aplicacion ir a los 3 puntos arriba a la izquierda y luego a **open** y dentro de **PycharmProjects** seleccionar la carpeta del proyecto.
+2.  **MySQL Server**\
+    Descárgalo desde [MySQL Community Downloads](https://dev.mysql.com/downloads/).
 
-Ademas hay que importar dentro de **Workbench** el sql del progrma y ejecutarlo para que todo funcione correctamente
+3.  **Librerías de Python necesarias**\
+    Se instalan con el comando `pip`:
 
-### Instalar dependencias
-En la terminal integrada del IDE o del sistema, ejecuta el siguiente comando para instalar las dependencias necesarias:
+    -   `pymysql`
+    -   `pandas`
+    -   `openpyxl`
+    -   `matplotlib`
 
-pip install pymysql pandas openpyxl matplotlib
-## Guia de uso
+* * * * *
 
-### Ejecución del programa
+Instalación y configuración
+---------------------------
 
-- Iniciar el programa
-En PyCharm, abre el archivo principal Hito2DanielMillan.py.
-Haz clic en el botón verde de Run en la parte superior derecha o presiona Shift + F10.
+### 1\. **Importar el proyecto en PyCharm**
 
-- Usar la aplicación
-La interfaz gráfica de Tkinter te permitirá realizar las siguientes operaciones:
+-   Copia la carpeta completa del proyecto en la ruta predeterminada de PyCharm:\
+    `C:\Usuarios\TuNombreUsuario\PycharmProjects`.
 
-- Operaciones CRUD:
-- Exportar a Excel
-- Visualización de gráficos
+-   Abre PyCharm y selecciona la opción **File > Open**. Navega a la carpeta **PycharmProjects** y selecciona la carpeta del proyecto.
 
+### 2\. **Configurar la base de datos en MySQL Workbench**
 
-## Funcionalidades principales
-### Operaciones CRUD
-- Crear registro: Ingresa todos los datos requeridos en los campos y presiona Crear registro.
-- Editar registro: Selecciona un registro en la tabla, modifica los campos y presiona Editar registro.
-- Eliminar registro: Selecciona un registro y presiona Eliminar registro, confirmando en la ventana emergente.
-- Consultar registros: Presiona Consultar para ver todos los registros o usa filtros para búsquedas específicas.
-### Generación de gráficos
-- Usa los botones de Gráfico de Barras o Gráfico Circular para visualizar los datos filtrados en la tabla.
-### Exportación a Excel
-- Presiona Exportar a Excel para guardar los datos mostrados en un archivo .xlsx.
+-   Abre **MySQL Workbench**.
+-   Importa el archivo SQL proporcionado y ejecútalo para crear la estructura de la base de datos necesaria.
 
-## FAQ
+### 3\. **Instalar las dependencias**
 
-#### Error de conexión con MySQL:
+Abre la terminal integrada en PyCharm (o cualquier terminal) y ejecuta el siguiente comando:
 
-Verifica que el servidor esté ejecutándose y los detalles de conexión sean correctos.
+bash
 
-#### Librerías no encontradas:
+Copiar código
 
-Asegúrate de haber instalado todas las dependencias usando pip.
+`pip install pymysql pandas openpyxl matplotlib`
 
-#### Errores en PyCharm:
+* * * * *
 
-- Verifica que el intérprete de Python esté configurado correctamente.
-- Asegúrate de estar en el entorno virtual correcto.
+Guía de uso
+-----------
+
+### 1\. **Ejecutar el programa**
+
+-   En PyCharm, abre el archivo principal `Hito2DanielMillan.py`.
+-   Ejecuta el programa haciendo clic en el botón verde **Run** en la esquina superior derecha o presionando `Shift + F10`.
+
+### 2\. **Usar la aplicación**
+
+La interfaz gráfica te permitirá realizar las siguientes operaciones:
+
+#### Operaciones CRUD
+
+-   **Crear registro**: Llena los campos requeridos y presiona **Crear registro**.
+-   **Editar registro**: Selecciona un registro en la tabla, edita los campos y presiona **Editar registro**.
+-   **Eliminar registro**: Selecciona un registro, presiona **Eliminar registro** y confirma.
+-   **Consultar registros**: Presiona **Consultar** para ver todos los registros o usa los filtros disponibles.
+
+#### Generación de gráficos
+
+-   Usa los botones **Gráfico de Barras** o **Gráfico Circular** para visualizar los datos filtrados.
+
+#### Exportación a Excel
+
+-   Presiona el botón **Exportar a Excel** para guardar los datos visibles en un archivo `.xlsx`.
+
+* * * * *
+
+Solución de problemas
+---------------------
+
+#### **Error de conexión con MySQL**
+
+-   Verifica que el servidor de MySQL esté ejecutándose.
+-   Asegúrate de que las credenciales de conexión en el código sean correctas.
+
+#### **Librerías no encontradas**
+
+-   Ejecuta nuevamente el comando `pip install pymysql pandas openpyxl matplotlib` para instalar las dependencias faltantes.
+
+#### **Errores en PyCharm**
+
+-   Verifica que el intérprete de Python esté configurado correctamente en **File > Settings > Project > Python Interpreter**.
+-   Asegúrate de estar trabajando en el entorno virtual correcto.
