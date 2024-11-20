@@ -50,11 +50,7 @@ Instalación y configuración
 
 Abre la terminal integrada en PyCharm (o cualquier terminal) y ejecuta el siguiente comando:
 
-bash
-
-Copiar código
-
-`pip install pymysql pandas openpyxl matplotlib`
+`pip install pymysql pandas openpyxl matplotlib`  
 
 * * * * *
 
